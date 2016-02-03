@@ -262,7 +262,6 @@ public class AdaptersCard extends RecyclerView.Adapter<AdaptersCard.ViewHolder> 
             final int position = getPosition();
             final SingleCard cardData = itemFronts.get(position);
 
-
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setCancelable(true);
             builder.setTitle("Do you want to delete this item?");
@@ -275,11 +274,7 @@ public class AdaptersCard extends RecyclerView.Adapter<AdaptersCard.ViewHolder> 
                     ParseQuery<ParseObject> query = ParseQuery.getQuery("Cards");
                     query.getInBackground(id, new GetCallback<ParseObject>() {
                                 public void done(ParseObject object, ParseException e) {
-//                    ParseQuery<ParseObject> query = ParseQuery.getQuery(dbHelp.TABLE_NAME_CARDS);
-//                    query.whereEqualTo(dbHelp.COLUMN_CARD_ID, id);
-//                    query.findInBackground(new FindCallback<ParseObject>() {
-//                       @Override
-//                       public void done(List<ParseObject> objects, ParseException e) {
+//
                                     if (e == null) {
 
                                         //for (ParseObject nameObj : objects) {
@@ -300,19 +295,7 @@ public class AdaptersCard extends RecyclerView.Adapter<AdaptersCard.ViewHolder> 
 
                                     }
 
-                           /*         {
 
-                                        // remove all messages at once
-                                        try {
-                                            object.delete();
-                                            object.saveInBackground();
-                                            notifyItemRemoved(position);
-                                            notifyDataSetChanged();
-                                        } catch (ParseException pe) {
-                                            pe.printStackTrace();
-                                        }
-                                    }
-*/
 
                                 }
 //

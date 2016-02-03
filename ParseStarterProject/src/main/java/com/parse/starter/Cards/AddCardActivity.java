@@ -191,6 +191,7 @@ public class AddCardActivity extends ActionBarActivity implements View.OnClickLi
                 Intent.putExtra(SENT_CardsetName, cardsetName);
                 Log.d("SENT_CAT_ID FROM Add cat", cardsetName);
                 startActivity(Intent);
+                finish();
 
             } else {
                 etTextF.setText("error!!!");

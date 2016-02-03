@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.parse.ParseACL;
 import com.parse.ParseAnalytics;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
@@ -60,11 +61,6 @@ public class AddCardSetActivity extends ActionBarActivity {
         ib_icon2 = (ImageButton) findViewById(R.id.ib_game);
         ib_icon3 = (ImageButton) findViewById(R.id.ib_static);
 
-//        bt_save.setOnClickListener(this);
-//        bt_download.setOnClickListener(this);
-//        ib_icon1.setOnClickListener(this);
-//        ib_icon2.setOnClickListener(this);
-//        ib_icon3.setOnClickListener(this);
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
@@ -102,6 +98,12 @@ public class AddCardSetActivity extends ActionBarActivity {
                     cardsetOjb.put(dbHelp.COLUMN_CARDSET_NAME, strCardsetName);
                     cardsetOjb.put(dbHelp.COLUMN_CARDSET_TITLE, strTitle);
                     cardsetOjb.put(dbHelp.COLUMN_CARDSET_ICONFILE, pfIconFile);
+
+                    ParseACL acl = new ParseACL();
+                    acl.setPublicWriteAccess(true);
+                    acl.setPublicReadAccess(true);
+                    cardsetOjb.setACL(acl);
+
                     cardsetOjb.saveInBackground();
 
                     Toast.makeText(AddCardSetActivity.this, "Save Cardset complete", Toast.LENGTH_SHORT).show();
@@ -112,50 +114,13 @@ public class AddCardSetActivity extends ActionBarActivity {
 
                 Intent intGoto = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intGoto);
+                finish();
 
             }
         });
 
     }
 
-//    public void onClick(View v) {
-//
-//        if(v == ib_icon2){
-//
-//        }
-//        if(v == ib_icon3){
-//            iv_showIcon.setImageResource(R.mipmap.ic_statistic);
-//            intIcon = R.mipmap.ic_statistic;
-//        }
-//
-//        if (v == bt_save){
-//            Log.d("TestOnClick","ib_go Okey");
-//            strCardsetName = et_cardsetName.getText().toString();
-//            strTitle = et_title.getText().toString();
-//
-//            ImageIcon(intIcon);
-//            if (strCardsetName != null){
-//                ParseObject cardsetOjb = new ParseObject(dbHelp.TABLE_NAME_DATA);
-//                cardsetOjb.put(dbHelp.COLUMN_CARDSET_NAME, strCardsetName);
-//                cardsetOjb.put(dbHelp.COLUMN_CARDSET_TITLE, strTitle);
-//                cardsetOjb.put(dbHelp.COLUMN_CARDSET_ICONFILE, pfIconFile);
-//                cardsetOjb.saveInBackground();
-//
-//                Toast.makeText(AddCardSetActivity.this, "Save Cardset complete", Toast.LENGTH_SHORT).show();
-//            }
-//            else {
-//                Toast.makeText(AddCardSetActivity.this, "Save Cardset error. Cardset is null.", Toast.LENGTH_SHORT).show();
-//            }
-//
-//            Intent intGoto = new Intent(getApplicationContext(), MainActivity.class);
-//            startActivity(intGoto);
-//
-//
-//        } else {
-//            Log.d("TestOnClick","ib_go Not Okey");
-//
-//        }
-//    }
     public void ImageIcon(int id){
         // Locate the image in res > drawable-hdpi
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), id);

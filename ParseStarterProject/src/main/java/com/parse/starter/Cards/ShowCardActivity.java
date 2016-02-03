@@ -113,6 +113,7 @@ public class ShowCardActivity extends ActionBarActivity {
     final List<setSingleCard> datalist = new ArrayList<>();
     final DatabaseHelp PHelp = new DatabaseHelp();
     Log.d("ERROR CARDSETNAME",cardsetName);
+
     ParseQuery<ParseObject> query = ParseQuery.getQuery(PHelp.TABLE_NAME_CARDS);
     query.whereEqualTo(PHelp.COLUMN_CARD_CARDSETNAME,cardsetName);
     query.findInBackground(new FindCallback<ParseObject>() {
@@ -156,26 +157,11 @@ public class ShowCardActivity extends ActionBarActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
         // recyclerView.setLayoutManager(new LinearLayoutManager(context));
+
         Log.d("vamvam", "test");
 
       }
     });
 
   }
-
-
 }
- /* mToolbarBottom.setOnMenuItemClickListener(new OnMenuItemClickListener() {
-      @Override
-      public boolean onMenuItemClick(MenuItem menuItem) {
-        Intent it = null;
-        switch (menuItem.getItemId()){
-          case R.id.action_game:
-            it = new Intent(getApplicationContext(),GameHomeActivity.class);
-
-            break;
-        }
-        startActivity(it);
-        return true;
-      }
-    });*/

@@ -62,6 +62,7 @@ public class MainActivity extends ActionBarActivity  {
         if (e == null) {
           Log.d("name111111", String.valueOf(cardSetlist.size()));
           for (int i = 0; i < cardSetlist.size(); i++) {
+              String id = cardSetlist.get(i).getObjectId();
             String cardSetName = cardSetlist.get(i).getString(PHelp.COLUMN_CARDSET_NAME);
             String  cardSetTitle= cardSetlist.get(i).getString(PHelp.COLUMN_CARDSET_TITLE);
             ParseFile iconFile = cardSetlist.get(i).getParseFile(PHelp.COLUMN_CARDSET_ICONFILE);
@@ -71,6 +72,7 @@ public class MainActivity extends ActionBarActivity  {
 
             setSigleCardset setCardSet = new setSigleCardset();
             // cWord.setItemID(id);
+            setCardSet.setCardsetID(id);
             setCardSet.setCardsetName(cardSetName);
             setCardSet.setCardsetTitle(cardSetTitle);
             setCardSet.setIcon(iconFile);

@@ -37,6 +37,7 @@ public class MenubarAddCardSet {
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), AddCardSetActivity.class);
                 activity.startActivity(it);
+                activity.finish();
             }
         });
         mToolbarBottom.findViewById(R.id.iv_static).setOnClickListener(new View.OnClickListener() {

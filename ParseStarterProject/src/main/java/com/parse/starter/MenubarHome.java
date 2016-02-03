@@ -37,6 +37,7 @@ public class MenubarHome {
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), MainActivity.class);
                 activity.startActivity(it);
+                activity.finish();
             }
         });
         mToolbarBottom.findViewById(R.id.iv_static2).setOnClickListener(new View.OnClickListener() {
