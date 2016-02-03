@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:id="@+id/editText"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:text="What does it mean?"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame_Answer"
+                android:src="@drawable/frame_true_false"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:id="@+id/ivImg_Answer"
+                android:src="@drawable/im_face_bear"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tvName_Answer"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:layout_centerInParent="true"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/showtime1"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/showtime2"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/showtime3"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAnswer"
+            android:text=""
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAnswer"
+            android:theme="@android:style/Theme.Light"
+            android:src="@drawable/answer"
+            android:scaleType="centerCrop"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

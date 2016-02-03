@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:contentPadding="8dp"
+    app:cardUseCompatPadding="true" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:weightSum="1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivImg_mat"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/im_face_bear"
+            android:paddingTop="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tvName_mat"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            android:background="#90e8f0f1"
+            android:capitalize="words"
+            android:autoText="false" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

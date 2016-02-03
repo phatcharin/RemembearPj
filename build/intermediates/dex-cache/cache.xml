@@ -2,46 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\vamnoize\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.11.0\6592129dec2caa8791d322c7e4b6b7a30e8eadae\parse-android-1.11.0.jar"
+        jar="C:\Users\vamnoize\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.5.2\ecf534dba3a8446ce84cbb797d314763be212a68\glide-3.5.2.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="6592129dec2caa8791d322c7e4b6b7a30e8eadae">
-        <dex dex="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\pre-dexed\debug\parse-android-1.11.0-042170f992d16cd732d780a61ab2f50ff3d9c2a7.jar" />
-    </item>
-    <item
-        jar="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-70af34a5fbc4ef0662e67d1f4c385f0283183d8f.jar" />
-    </item>
-    <item
-        jar="C:\Users\vamnoize\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-34eb619a036d25304614f3e8a44cfea1bd8f93b5.jar" />
-    </item>
-    <item
-        jar="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-4a9b17b054991c3218c06e43b10f694b05cef91b.jar" />
-    </item>
-    <item
-        jar="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-31e56698255ba9f1cdfcbcefca66120f3fb2581b.jar" />
-    </item>
-    <item
-        jar="C:\Users\vamnoize\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.3.0\8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c\bolts-tasks-1.3.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
-        <dex dex="E:\RemembearPJ\rename\ParseStarterProject\build\intermediates\pre-dexed\debug\bolts-tasks-1.3.0-eb50c4231b5c1cf2034a0d537c7d957b2064ed61.jar" />
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="E:\RemembearPJ\RemembearPj\ParseStarterProject\build\intermediates\pre-dexed\debug\glide-3.5.2-305b6a9c2ea6e050fc09fca3099e5612f8136d4d.jar" />
     </item>
 
 </items>

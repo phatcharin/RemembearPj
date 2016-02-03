@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/ColorBg"
+    >
+    <include
+        android:id="@+id/inc_tb"
+        layout="@layout/toolbar"/>
+
+    <include
+        android:id="@+id/inc_tb_homebottom"
+        layout="@layout/toolbar_homebottom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRONT________________________"
+        android:id="@+id/textView"
+        android:layout_below="@+id/inc_tb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivImgFront"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_home" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTextFront"
+        android:layout_alignTop="@+id/ivImgFront"
+        android:layout_toRightOf="@+id/ivImgFront"
+        android:layout_toEndOf="@+id/ivImgFront"
+        android:layout_margin="10dp"
+        android:hint="Text Front"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivBtCameraF"
+        android:background="@mipmap/camera153"
+        android:layout_below="@+id/etTextFront"
+        android:layout_toLeftOf="@+id/ivBtPhotpF"
+        android:layout_toStartOf="@+id/ivBtPhotpF"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivBtPhotpF"
+        android:src="@mipmap/image6"
+        android:layout_below="@+id/etTextFront"
+        android:layout_alignRight="@+id/etTextFront"
+        android:layout_alignEnd="@+id/etTextFront"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgF2"
+        android:background="@color/ColorPrimary"
+        android:layout_below="@+id/ivImgFront"
+        android:layout_alignLeft="@+id/ivImgFront"
+        android:layout_alignStart="@+id/ivImgFront" />
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgF3"
+        android:background="@color/ColorPrimary"
+        android:layout_alignBottom="@+id/ivImgF2"
+        android:layout_toRightOf="@+id/ivImgF2"
+        android:layout_toEndOf="@+id/ivImgF2"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgF4"
+        android:background="@color/ColorPrimary"
+        android:layout_alignTop="@+id/ivImgF3"
+        android:layout_toRightOf="@+id/ivImgF3"
+        android:layout_toEndOf="@+id/ivImgF3"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgF5"
+        android:background="@color/ColorPrimary"
+        android:layout_alignTop="@+id/ivImgF4"
+        android:layout_toRightOf="@+id/ivImgF4"
+        android:layout_toEndOf="@+id/ivImgF4"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK________________________"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ivImgF2"
+        android:layout_alignStart="@+id/ivImgF2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivImgBack"
+        android:background="@color/ColorPrimary"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTextBack"
+        android:hint="Text Back"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/ivImgBack"
+        android:layout_toEndOf="@+id/ivImgBack" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivBtCameraB"
+        android:background="@mipmap/camera153"
+        android:layout_alignBottom="@+id/ivImgBack"
+        android:layout_toLeftOf="@+id/ivBtPhotpF"
+        android:layout_toStartOf="@+id/ivBtPhotpF" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivBtPhotpB"
+        android:src="@mipmap/image6"
+        android:layout_alignTop="@+id/ivBtCameraB"
+        android:layout_alignLeft="@+id/ivBtPhotpF"
+        android:layout_alignStart="@+id/ivBtPhotpF" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgB2"
+        android:background="@color/ColorPrimary"
+        android:layout_below="@+id/ivImgBack"
+        android:layout_alignLeft="@+id/ivImgBack"
+        android:layout_alignStart="@+id/ivImgBack"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgB3"
+        android:background="@color/ColorPrimary"
+        android:layout_alignTop="@+id/ivImgB2"
+        android:layout_toRightOf="@+id/ivImgB2"
+        android:layout_toEndOf="@+id/ivImgB2"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgB4"
+        android:background="@color/ColorPrimary"
+        android:layout_alignTop="@+id/ivImgB3"
+        android:layout_toRightOf="@+id/ivImgB3"
+        android:layout_toEndOf="@+id/ivImgB3"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentEnd="false" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/ivImgB5"
+        android:background="@color/ColorPrimary"
+        android:layout_alignTop="@+id/ivImgB4"
+        android:layout_toRightOf="@+id/ivImgB4"
+        android:layout_toEndOf="@+id/ivImgB4"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnSave"
+        android:background="@color/ColorPrimary"
+        android:text="SAVE"
+        android:layout_below="@+id/ivImgB4"
+        android:layout_alignRight="@+id/ivImgB5"
+        android:layout_alignEnd="@+id/ivImgB5"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout><!-- From: file:/E:/RemembearPJ/RemembearPj/ParseStarterProject/src/main/res/layout/activity_add_card.xml -->

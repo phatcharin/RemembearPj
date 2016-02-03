@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+
+        android:id="@+id/editText"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:text="Games"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:theme="@android:style/Theme.Light"
+            android:src="@drawable/matching"
+            android:scaleType="centerCrop"
+            android:id="@+id/btnGameMatching"
+            />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/truefalse"
+
+            android:layout_marginTop="10dp"
+            android:theme="@android:style/Theme.Light"
+            android:scaleType="centerCrop"
+            android:id="@+id/btnGameTrueOrFalse"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:theme="@android:style/Theme.Light"
+            android:src="@drawable/answer"
+            android:scaleType="centerCrop"
+            android:id="@+id/btnGameAnswer"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back card set"
+            android:id="@+id/btnBackCat"
+            android:layout_gravity="bottom"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

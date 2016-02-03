@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/matchingName"
+        android:layout_gravity="right"
+        android:textSize="20sp"
+        android:text="Matching"
+        android:gravity="center"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card1"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card2"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card3"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card4"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card4"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card5"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card6"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card6"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card7"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card7"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card8"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card8"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card9"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card9"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card10"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card10"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card11"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card11"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card12"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card12"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card13"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card13"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="10sp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card14"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card14"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card15"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card15"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/img_card16"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/txt_card16"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

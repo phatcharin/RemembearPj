@@ -12,9 +12,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".StarterApplication"
+        android:name=".Cards.StarterApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -27,18 +28,48 @@
             android:value="@string/parse_client_key" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Cards.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".GameHomeActivity"
+            android:name=".Cards.GameHomeActivity"
             android:label="@string/app_name" >
-
+        </activity>
+        <activity
+            android:name=".Cards.AddCardSetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Cards.AddCardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Cards.ShowCardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Game.ChooseGames"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Game.GameAnswer"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Game.GameMatching"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Game.GameTrueOrFalse"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Game.ShowScore"
+            android:label="@string/app_name" >
         </activity>
     </application>
 

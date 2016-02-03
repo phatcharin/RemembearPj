@@ -8,6 +8,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Game"
-        android:id="@+id/textView"
+        android:id="@+id/textShow"
         android:layout_gravity="center_horizontal" />
-</LinearLayout><!-- From: file:/E:/RemembearPJ/rename/ParseStarterProject/src/main/res/layout/activity_gamehome.xml -->
+</LinearLayout><!-- From: file:/E:/RemembearPJ/RemembearPj/ParseStarterProject/src/main/res/layout/activity_gamehome.xml -->

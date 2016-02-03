@@ -18,9 +18,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.parse.starter.StarterApplication"
+        android:name="com.parse.starter.Cards.StarterApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -33,7 +34,7 @@
             android:value="@string/parse_client_key" />
 
         <activity
-            android:name="com.parse.starter.MainActivity"
+            android:name="com.parse.starter.Cards.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,9 +43,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.parse.starter.GameHomeActivity"
+            android:name="com.parse.starter.Cards.GameHomeActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.parse.starter.Cards.AddCardSetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Cards.AddCardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Cards.ShowCardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Game.ChooseGames"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Game.GameAnswer"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Game.GameMatching"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Game.GameTrueOrFalse"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.Game.ShowScore"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
     </application>
 
 </manifest>

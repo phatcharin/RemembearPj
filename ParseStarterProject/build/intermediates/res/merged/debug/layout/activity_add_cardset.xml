@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/ColorBg">
+    <include
+        android:id="@+id/inc_tb"
+        layout="@layout/toolbar"/>
+
+
+
+    <include
+        android:id="@+id/inc_tb_bottom"
+        layout="@layout/toolbar_bottom"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/iv_showIcon"
+        android:layout_below="@+id/inc_tb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_game" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et_cardsetName"
+        android:hint="Cardset&apos;s name"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/iv_showIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:layout_toRightOf="@+id/iv_showIcon"
+        android:layout_toEndOf="@+id/iv_showIcon"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="15dp" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Private"
+        android:id="@+id/bt_switch"
+        android:layout_below="@+id/et_cardsetName"
+        android:layout_alignLeft="@+id/iv_showIcon"
+        android:layout_alignStart="@+id/iv_showIcon"
+        android:background="@color/ColorPrimary" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/et_title"
+        android:background="#FFFFFF"
+        android:hint="Title"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignTop="@+id/bt_switch"
+        android:layout_toRightOf="@+id/ib_game"
+        android:layout_toEndOf="@+id/ib_game"
+        android:layout_marginRight="15dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_home"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/et_title"
+        android:layout_alignLeft="@+id/bt_switch"
+        android:layout_alignStart="@+id/bt_switch"
+        android:src="@mipmap/ic_home" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_game"
+        android:layout_alignBottom="@+id/ib_home"
+        android:layout_toRightOf="@+id/ib_home"
+        android:layout_toEndOf="@+id/ib_home"
+        android:src="@mipmap/ic_game" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_static"
+        android:src="@mipmap/ic_statistic"
+        android:layout_alignTop="@+id/ib_game"
+        android:layout_toRightOf="@+id/ib_game"
+        android:layout_toEndOf="@+id/ib_game" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Download Cardset"
+        android:id="@+id/bt_download"
+        android:layout_above="@+id/inc_tb_bottom"
+        android:layout_alignRight="@+id/ib_static"
+        android:layout_alignEnd="@+id/ib_static"
+        android:layout_marginBottom="23dp"
+        android:background="@color/ColorPrimary"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/bt_save"
+        android:layout_alignTop="@+id/bt_download"
+        android:layout_alignRight="@+id/et_title"
+        android:layout_alignEnd="@+id/et_title"
+        android:background="@color/ColorPrimary" />
+
+
+</RelativeLayout><!-- From: file:/E:/RemembearPJ/RemembearPj/ParseStarterProject/src/main/res/layout/activity_add_cardset.xml -->

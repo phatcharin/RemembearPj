@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/trueorfalseName"
+        android:layout_gravity="right"
+        android:textSize="20sp"
+        android:text="True or False"
+        android:gravity="center"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/showtime1"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/showtime2"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/showtime3"
+            android:textSize="20sp"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame_truefalse1"
+                android:src="@drawable/frame_true_false"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:id="@+id/ivImg_truefalse"
+                android:src="@drawable/im_face_bear"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tvName_truefalse"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:layout_centerInParent="true"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:clickable="false"
+            android:weightSum="1"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame_truefalse2"
+                android:src="@drawable/frame_true_false"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:id="@+id/ivImg_truefalse2"
+
+                android:src="@drawable/im_face_bear"
+                android:paddingTop="2dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tvName_truefalse2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:textIsSelectable="false"
+                android:background="#90e8f0f1"
+                android:capitalize="words"
+                android:autoText="false" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:weightSum="1"
+            android:gravity="center"
+            android:src="@drawable/matching"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bg_true_false"
+                android:src="@drawable/im_face_bear_crop"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/button_true"
+                android:id="@+id/btnTrue" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/button_false"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/btnFalse" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

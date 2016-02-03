@@ -9,26 +9,34 @@
     <ImageView
         android:id="@+id/iv_share"
         android:src="@mipmap/ic_share"
-        android:layout_height="24dp"
-        android:layout_width="24dp"
-        android:layout_marginLeft="50dp"/>
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="40dp"/>
     <ImageView
         android:id="@+id/iv_game"
         android:src="@mipmap/ic_game"
-        android:layout_height="24dp"
-        android:layout_width="24dp"
-        android:layout_marginLeft="50dp"/>
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="30dp"/>
     <ImageView
-        android:id="@+id/iv_home"
-        android:src="@mipmap/ic_home"
-        android:layout_height="24dp"
-        android:layout_width="24dp"
-        android:layout_marginLeft="50dp"/>
+        android:id="@+id/iv_add"
+        android:src="@mipmap/ic_add"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="30dp"/>
     <ImageView
         android:id="@+id/iv_static"
-        android:src="@mipmap/ic_game"
-        android:layout_height="24dp"
-        android:layout_width="24dp"
-        android:layout_marginLeft="50dp"/>
+        android:src="@mipmap/ic_statistic"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="30dp"/>
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:src="@mipmap/ic_setting"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="30dp"/>
 </android.support.v7.widget.Toolbar>
-<!-- From: file:/E:/RemembearPJ/rename/ParseStarterProject/src/main/res/layout/toolbar_bottom.xml -->
+<!-- From: file:/E:/RemembearPJ/RemembearPj/ParseStarterProject/src/main/res/layout/toolbar_bottom.xml -->

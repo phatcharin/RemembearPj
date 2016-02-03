@@ -8,8 +8,8 @@
   ~ of patent rights can be found in the PATENTS file in the same directory.
   -->
 <resources>
-    <string name="parse_app_id">YOUR_APPLICATION_ID</string>
-    <string name="parse_client_key">YOUR_CLIENT_KEY</string>
+    <string name="parse_app_id">Un59qWCUETeAIGB0EQvCT2D8ZPhh1EIOeN8XTvfA</string>
+    <string name="parse_client_key">KvkS5w0UnoAwNbxJepCZM9Kw3hjn9zfzNoDjVn5h</string>
 
     <string name="app_name">Parse Starter Project</string>
 
@@ -18,4 +18,14 @@
     <string name="action_share">Share</string>
     <string name="action_game">Game</string>
     <string name="action_home">Home</string>
+
+    <string name="title_delete">Delete this item</string>
+    <string name="prompt_delete">Do you want to remove this item.</string>
+    <string name="delete">Delete</string>
+
+
+
+
+
+
 </resources>
