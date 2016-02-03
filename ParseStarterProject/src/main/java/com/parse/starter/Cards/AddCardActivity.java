@@ -17,8 +17,6 @@ import com.parse.ParseACL;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.starter.DatabaseHelp;
-import com.parse.starter.MenubarAddCardSet;
-import com.parse.starter.MenubarHome;
 import com.parse.starter.R;
 
 import java.io.BufferedInputStream;
@@ -70,7 +68,7 @@ public class AddCardActivity extends ActionBarActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_card);
 
-        MenubarHome menubar = new MenubarHome(this);
+       // MenubarHome menubar = new MenubarHome(this);
 
         ivImgF = (ImageView) findViewById(R.id.ivImgFront);
         ivImgF2 = (ImageView) findViewById(R.id.ivImgF2);

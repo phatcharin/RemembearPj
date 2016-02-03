@@ -18,6 +18,8 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.starter.DatabaseHelp;
+import com.parse.starter.MenubarAddCardSet;
+import com.parse.starter.MenubarHome;
 import com.parse.starter.R;
 
 import java.io.ByteArrayOutputStream;
@@ -25,7 +27,7 @@ import java.io.ByteArrayOutputStream;
 /**
  * Created by vamnoize on 31/12/2558.
  */
-public class AddCardSetActivity extends ActionBarActivity implements OnClickListener{
+public class AddCardSetActivity extends ActionBarActivity {
     ImageView iv_showIcon;
    // ImageButton ib_go;
     ImageButton ib_icon1,ib_icon2,ib_icon3;
@@ -45,6 +47,7 @@ public class AddCardSetActivity extends ActionBarActivity implements OnClickList
 
         setContentView(R.layout.activity_add_cardset);
 
+        MenubarHome menu = new MenubarHome(this);
 
         iv_showIcon = (ImageView) findViewById(R.id.iv_showIcon);
 
@@ -57,59 +60,102 @@ public class AddCardSetActivity extends ActionBarActivity implements OnClickList
         ib_icon2 = (ImageButton) findViewById(R.id.ib_game);
         ib_icon3 = (ImageButton) findViewById(R.id.ib_static);
 
-        bt_save.setOnClickListener(this);
-        bt_download.setOnClickListener(this);
-        ib_icon1.setOnClickListener(this);
-        ib_icon2.setOnClickListener(this);
-        ib_icon3.setOnClickListener(this);
+//        bt_save.setOnClickListener(this);
+//        bt_download.setOnClickListener(this);
+//        ib_icon1.setOnClickListener(this);
+//        ib_icon2.setOnClickListener(this);
+//        ib_icon3.setOnClickListener(this);
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
+        ib_icon1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv_showIcon.setImageResource(R.mipmap.ic_home);
+                intIcon = R.mipmap.ic_home;
+            }
+        });
+        ib_icon2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv_showIcon.setImageResource(R.mipmap.ic_game);
+                intIcon = R.mipmap.ic_game;
+            }
+        });
+        ib_icon3.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iv_showIcon.setImageResource(R.mipmap.ic_statistic);
+                intIcon = R.mipmap.ic_statistic;
+            }
+        });
+        bt_save.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("TestOnClick","ib_go Okey");
+                strCardsetName = et_cardsetName.getText().toString();
+                strTitle = et_title.getText().toString();
+
+                ImageIcon(intIcon);
+                if (strCardsetName != null){
+                    ParseObject cardsetOjb = new ParseObject(dbHelp.TABLE_NAME_DATA);
+                    cardsetOjb.put(dbHelp.COLUMN_CARDSET_NAME, strCardsetName);
+                    cardsetOjb.put(dbHelp.COLUMN_CARDSET_TITLE, strTitle);
+                    cardsetOjb.put(dbHelp.COLUMN_CARDSET_ICONFILE, pfIconFile);
+                    cardsetOjb.saveInBackground();
+
+                    Toast.makeText(AddCardSetActivity.this, "Save Cardset complete", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(AddCardSetActivity.this, "Save Cardset error. Cardset is null.", Toast.LENGTH_SHORT).show();
+                }
+
+                Intent intGoto = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intGoto);
+
+            }
+        });
+
     }
 
-    public void onClick(View v) {
-
-        if(v == ib_icon1){
-            iv_showIcon.setImageResource(R.mipmap.ic_home);
-            intIcon = R.mipmap.ic_home;
-        }
-        if(v == ib_icon2){
-            iv_showIcon.setImageResource(R.mipmap.ic_game);
-            intIcon = R.mipmap.ic_game;
-        }
-        if(v == ib_icon3){
-            iv_showIcon.setImageResource(R.mipmap.ic_statistic);
-            intIcon = R.mipmap.ic_statistic;
-        }
-
-        if (v == bt_save){
-            Log.d("TestOnClick","ib_go Okey");
-            strCardsetName = et_cardsetName.getText().toString();
-            strTitle = et_title.getText().toString();
-
-            ImageIcon(intIcon);
-            if (strCardsetName != null){
-                ParseObject cardsetOjb = new ParseObject(dbHelp.TABLE_NAME_DATA);
-                cardsetOjb.put(dbHelp.COLUMN_CARDSET_NAME, strCardsetName);
-                cardsetOjb.put(dbHelp.COLUMN_CARDSET_TITLE, strTitle);
-                cardsetOjb.put(dbHelp.COLUMN_CARDSET_ICONFILE, pfIconFile);
-                cardsetOjb.saveInBackground();
-
-                Toast.makeText(AddCardSetActivity.this, "Save Cardset complete", Toast.LENGTH_SHORT).show();
-            }
-            else {
-                Toast.makeText(AddCardSetActivity.this, "Save Cardset error. Cardset is null.", Toast.LENGTH_SHORT).show();
-            }
-
-            Intent intGoto = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intGoto);
-
-
-        } else {
-            Log.d("TestOnClick","ib_go Not Okey");
-
-        }
-    }
+//    public void onClick(View v) {
+//
+//        if(v == ib_icon2){
+//
+//        }
+//        if(v == ib_icon3){
+//            iv_showIcon.setImageResource(R.mipmap.ic_statistic);
+//            intIcon = R.mipmap.ic_statistic;
+//        }
+//
+//        if (v == bt_save){
+//            Log.d("TestOnClick","ib_go Okey");
+//            strCardsetName = et_cardsetName.getText().toString();
+//            strTitle = et_title.getText().toString();
+//
+//            ImageIcon(intIcon);
+//            if (strCardsetName != null){
+//                ParseObject cardsetOjb = new ParseObject(dbHelp.TABLE_NAME_DATA);
+//                cardsetOjb.put(dbHelp.COLUMN_CARDSET_NAME, strCardsetName);
+//                cardsetOjb.put(dbHelp.COLUMN_CARDSET_TITLE, strTitle);
+//                cardsetOjb.put(dbHelp.COLUMN_CARDSET_ICONFILE, pfIconFile);
+//                cardsetOjb.saveInBackground();
+//
+//                Toast.makeText(AddCardSetActivity.this, "Save Cardset complete", Toast.LENGTH_SHORT).show();
+//            }
+//            else {
+//                Toast.makeText(AddCardSetActivity.this, "Save Cardset error. Cardset is null.", Toast.LENGTH_SHORT).show();
+//            }
+//
+//            Intent intGoto = new Intent(getApplicationContext(), MainActivity.class);
+//            startActivity(intGoto);
+//
+//
+//        } else {
+//            Log.d("TestOnClick","ib_go Not Okey");
+//
+//        }
+//    }
     public void ImageIcon(int id){
         // Locate the image in res > drawable-hdpi
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), id);

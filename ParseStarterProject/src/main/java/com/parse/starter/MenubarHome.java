@@ -16,43 +16,44 @@ public class MenubarHome {
     public MenubarHome(final Activity activity){
         Toolbar mToolbarBottom;
 
-        mToolbarBottom = (Toolbar) activity.findViewById(R.id.inc_tb_homebottom);
+        mToolbarBottom = (Toolbar) activity.findViewById(R.id.inc_tb_home);
 
-        mToolbarBottom.findViewById(R.id.iv_share).setOnClickListener(new View.OnClickListener() {
+        mToolbarBottom.findViewById(R.id.iv_share2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), GameHomeActivity.class);
                 activity.startActivity(it);
             }
         });
-        mToolbarBottom.findViewById(R.id.iv_game).setOnClickListener(new View.OnClickListener() {
+        mToolbarBottom.findViewById(R.id.iv_game2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), GameHomeActivity.class);
                 activity.startActivity(it);
             }
         });
-        mToolbarBottom.findViewById(R.id.iv_home).setOnClickListener(new View.OnClickListener() {
+        mToolbarBottom.findViewById(R.id.iv_home2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), MainActivity.class);
                 activity.startActivity(it);
             }
         });
-        mToolbarBottom.findViewById(R.id.iv_static).setOnClickListener(new View.OnClickListener() {
+        mToolbarBottom.findViewById(R.id.iv_static2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), GameHomeActivity.class);
                 activity.startActivity(it);
             }
         });
-        mToolbarBottom.findViewById(R.id.iv_setting).setOnClickListener(new View.OnClickListener() {
+        mToolbarBottom.findViewById(R.id.iv_setting2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(activity.getApplicationContext(), GameHomeActivity.class);
                 activity.startActivity(it);
             }
         });
+
         mToolbarBottom.inflateMenu(R.menu.menu_bottom);
 
     }

@@ -28,6 +28,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.starter.DatabaseHelp;
 import com.parse.starter.Game.ChooseGames;
+import com.parse.starter.MenubarHome;
 import com.parse.starter.R;
 
 import java.util.ArrayList;
@@ -50,6 +51,7 @@ public class ShowCardActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_show_card);
 
+
     Bundle bundle = getIntent().getExtras();
     String receive_cardsetName =  bundle.getString(SENT_CardsetName);
     cardsetName = receive_cardsetName;
@@ -66,15 +68,15 @@ public class ShowCardActivity extends ActionBarActivity {
     });
 
 
-    mToolbarBottom = (Toolbar) findViewById(R.id.inc_tb_bottom);
-    mToolbarBottom.findViewById(R.id.iv_share).setOnClickListener(new View.OnClickListener() {
+    mToolbarBottom = (Toolbar) findViewById(R.id.inc_tb_showcard);
+    mToolbarBottom.findViewById(R.id.iv_share3).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);
         startActivity(it);
       }
     });
-    mToolbarBottom.findViewById(R.id.iv_game).setOnClickListener(new View.OnClickListener() {
+    mToolbarBottom.findViewById(R.id.iv_game3).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         Intent it = new Intent(getApplicationContext(), ChooseGames.class);
@@ -82,21 +84,21 @@ public class ShowCardActivity extends ActionBarActivity {
         startActivity(it);
       }
     });
-    mToolbarBottom.findViewById(R.id.iv_home).setOnClickListener(new View.OnClickListener() {
+    mToolbarBottom.findViewById(R.id.iv_home3).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        Intent it = new Intent(getApplicationContext(), AddCardSetActivity.class);
+        Intent it = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(it);
       }
     });
-    mToolbarBottom.findViewById(R.id.iv_static).setOnClickListener(new View.OnClickListener() {
+    mToolbarBottom.findViewById(R.id.iv_static3).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);
         startActivity(it);
       }
     });
-    mToolbarBottom.findViewById(R.id.iv_setting).setOnClickListener(new View.OnClickListener() {
+    mToolbarBottom.findViewById(R.id.iv_setting3).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);

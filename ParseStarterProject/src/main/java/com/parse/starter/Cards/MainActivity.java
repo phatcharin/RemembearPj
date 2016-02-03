@@ -34,55 +34,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity  {
 
   private Toolbar mToolbarBottom;
 
   private Context context = this;
   RecyclerView recyclerView;
-
-//  class AAA {
-//    public AAA(Activity activity){
-//      mToolbarBottom = (Toolbar) activity.findViewById(R.id.inc_tb_bottom);
-//      mToolbarBottom.findViewById(R.id.iv_share).setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//          Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);
-//          startActivity(it);
-//        }
-//      });
-//      mToolbarBottom.findViewById(R.id.iv_game).setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//          Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);
-//          startActivity(it);
-//        }
-//      });
-//      mToolbarBottom.findViewById(R.id.iv_home).setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//          Intent it = new Intent(getApplicationContext(), AddCardSetActivity.class);
-//          startActivity(it);
-//        }
-//      });
-//      mToolbarBottom.findViewById(R.id.iv_static).setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//          Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);
-//          startActivity(it);
-//        }
-//      });
-//      mToolbarBottom.findViewById(R.id.iv_setting).setOnClickListener(new View.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//          Intent it = new Intent(getApplicationContext(), GameHomeActivity.class);
-//          startActivity(it);
-//        }
-//      });
-//      mToolbarBottom.inflateMenu(R.menu.menu_bottom);
-//
-//    }
-//  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -135,7 +92,6 @@ public class MainActivity extends ActionBarActivity {
     });
 
   }
-
 
 }
  /* mToolbarBottom.setOnMenuItemClickListener(new OnMenuItemClickListener() {

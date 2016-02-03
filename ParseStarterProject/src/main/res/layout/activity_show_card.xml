@@ -15,6 +15,9 @@
     <include
         android:id="@+id/inc_tb"
         layout="@layout/toolbar"/>
+    <include
+        android:id="@+id/inc_tb_showcard"
+        layout="@layout/toolbar_bottom_show_card"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_cardset"
@@ -25,9 +28,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp" />
 
-    <include
-        android:id="@+id/inc_tb_bottom"
-        layout="@layout/toolbar_bottom"/>
+
 
     <Button
         android:layout_width="wrap_content"
