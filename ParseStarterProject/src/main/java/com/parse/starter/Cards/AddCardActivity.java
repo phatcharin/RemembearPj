@@ -43,7 +43,7 @@ public class AddCardActivity extends ActionBarActivity implements View.OnClickLi
 
     DatabaseHelp dbHelp = new DatabaseHelp();
 
-
+//testtttt git
 
     String receive_cardsetName;
     String cardsetName;
